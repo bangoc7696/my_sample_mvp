@@ -18,32 +18,10 @@ class PostPresenterImpl(var postView: PostView, var applicationComponent: Applic
     }
 
     override fun getAllPosts() {
-
-
-        var view = view()
-
-        view?.let {
-            var allPosts = mNetworkApi.getAllPosts()
-            addDisposable(allPosts.subscribeOn(IoScheduler()).observeOn(AndroidSchedulers.mainThread())
-                    .subscribe(
-                            { result ->
-                                view?.let {
-                                    postView.showAllPosts(result)
-                                }
-                            },
-                            { error ->
-                                view?.let {
-                                }
-                            }
-                    ))
-        }
-
         var allPosts = mNetworkApi.getAllPosts()
         allPosts.subscribeOn(IoScheduler()).observeOn(AndroidSchedulers.mainThread())
-                .subscribe {
-                    postView.showAllPosts(it)
-                }
+            .subscribe {
+                postView.showAllPosts(it)
+            }
     }
-
-
 }
