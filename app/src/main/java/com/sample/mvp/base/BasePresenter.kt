@@ -13,7 +13,7 @@ Volatile make sure the variable can  be accessed cross different threads
 
 */
 
-open class Preseneter<V>(@Volatile var view: V? ){
+open class BasePresenter<V>(@Volatile var view: V? ){
     companion object {
         /*
         var compositeDisposables: CompositeDisposable

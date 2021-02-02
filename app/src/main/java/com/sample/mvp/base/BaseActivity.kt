@@ -29,8 +29,7 @@ abstract class BaseActivity : Activity(), IView {
     fun initialzeProgressDialoge(){
 
         if(mProgressDialog==null) {
-
-            mProgressDialog = ProgressDialog(this)
+            mProgressDialog = ProgressDialog(this, R.style.AppCompatAlertDialogStyle)
             mProgressDialog!!.isIndeterminate = true
             mProgressDialog!!.setCancelable(false)
         }

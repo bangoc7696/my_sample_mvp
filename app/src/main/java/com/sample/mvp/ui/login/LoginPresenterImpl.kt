@@ -3,10 +3,10 @@ package com.sample.mvp.ui.login
 import android.app.Application
 import com.sample.mvp.ApplicationClass
 import com.sample.mvp.network.INetworkApi
-import com.sample.mvp.base.Preseneter
+import com.sample.mvp.base.BasePresenter
 import javax.inject.Inject
 
-class LoginPresenterImpl(var loginViewInit: LoginView, var applicationComponent: Application) : LoginPresenter, Preseneter<LoginView>(loginViewInit) {
+class LoginPresenterImpl(var loginViewInit: LoginView, var applicationComponent: Application) : LoginPresenter, BasePresenter<LoginView>(loginViewInit) {
 
     @Inject
     lateinit var mNetworkApi: INetworkApi
