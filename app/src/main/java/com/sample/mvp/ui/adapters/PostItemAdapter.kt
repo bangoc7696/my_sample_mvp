@@ -1,10 +1,10 @@
 package com.sample.mvp.ui.adapters
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
 import com.sample.mvp.R
 import com.sample.mvp.data.PostData
 import kotlinx.android.synthetic.main.post_list_item.view.*

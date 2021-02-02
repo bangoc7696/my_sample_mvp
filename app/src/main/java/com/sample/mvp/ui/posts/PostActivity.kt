@@ -1,9 +1,9 @@
 package com.sample.mvp.ui.posts
 
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
 import android.util.Log
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.sample.mvp.R
 import com.sample.mvp.data.PostData
 import com.sample.mvp.base.BaseActivity

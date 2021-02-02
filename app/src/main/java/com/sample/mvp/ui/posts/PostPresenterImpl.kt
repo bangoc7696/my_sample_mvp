@@ -18,10 +18,16 @@ class PostPresenterImpl(var postView: PostView, var applicationComponent: Applic
     }
 
     override fun getAllPosts() {
-        var allPosts = mNetworkApi.getAllPosts()
-        allPosts.subscribeOn(IoScheduler()).observeOn(AndroidSchedulers.mainThread())
-            .subscribe {
-                postView.showAllPosts(it)
-            }
+        try {
+            postView.showLoading()
+            var allPosts = mNetworkApi.getAllPosts()
+            allPosts.subscribeOn(IoScheduler()).observeOn(AndroidSchedulers.mainThread())
+                .subscribe {
+                    postView.hideLoading()
+                    postView.showAllPosts(it)
+                }
+        } catch (e:Exception) {
+            e.printStackTrace()
+        }
     }
 }

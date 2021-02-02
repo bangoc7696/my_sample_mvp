@@ -4,8 +4,8 @@ import android.app.Activity
 import android.app.ProgressDialog
 import android.content.DialogInterface
 import android.os.Bundle
-import android.support.annotation.LayoutRes
 import android.widget.Toast
+import androidx.annotation.LayoutRes
 import com.sample.mvp.R
 import com.sample.mvp.ui.IView
 

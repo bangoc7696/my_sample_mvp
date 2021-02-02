@@ -1,6 +1,6 @@
 package com.sample.mvp.base
 
-import android.support.annotation.CallSuper
+import androidx.annotation.CallSuper
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
@@ -14,22 +14,17 @@ Volatile make sure the variable can  be accessed cross different threads
 */
 
 open class Preseneter<V>(@Volatile var view: V? ){
-
-
     companion object {
-
         /*
         var compositeDisposables: CompositeDisposable
         Every method which will be part of presenter lyer will be added in it so we could dispose off them once they are no more in our use
         */
         var compositeDisposables: CompositeDisposable=CompositeDisposable()
-
     }
 
 
     init {
-
-
+        //TODO
     }
 
 
@@ -49,6 +44,4 @@ open class Preseneter<V>(@Volatile var view: V? ){
     fun addDisposable(disposable: Disposable) {
         compositeDisposables.add(disposable)
     }
-
-
 }
