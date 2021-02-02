@@ -27,6 +27,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparent"
                 android:hint="Tài khoản"
+                android:fontFamily="@font/montserratmedium"
                 android:maxLines="1" />
 
             <View
@@ -47,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/transparent"
                 android:hint="Mật khẩu"
+                android:fontFamily="@font/montserratmedium"
                 android:inputType="textPassword"
                 android:maxLines="1" />
 
@@ -62,6 +64,7 @@
             style="@style/MyButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:fontFamily="@font/montserratsemibold"
             android:layout_marginTop="30dp"
             android:text="Đăng nhập" />
 

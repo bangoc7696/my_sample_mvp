@@ -41,7 +41,8 @@ class NetModule {
         return Retrofit.Builder().addConverterFactory(GsonConverterFactory.create(gson))
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(okHttpClient)
-                .baseUrl("https://jsonplaceholder.typicode.com/").build()
+                .baseUrl("https://testapi.io/api/ngocnb21/").build()
+                /*.baseUrl("https://jsonplaceholder.typicode.com/").build()*/
     }
 
 

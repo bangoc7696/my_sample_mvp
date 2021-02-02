@@ -19,13 +19,16 @@ class PostItemAdapter(val postItems: List<PostData>, val context: Context) : Rec
     }
 
     override fun getItemCount(): Int {
-        return 10
+        return 20
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
-        holder?.itemView.tv_post_title.text = postItems.get(position).title
-        holder?.itemView.tv_post_body.text = postItems.get(position).body
+        try {
+            holder?.itemView.tv_post_title.text = postItems.get(position).title
+            holder?.itemView.tv_post_body.text = postItems.get(position).body
+        } catch (e: Exception) {
+            e.printStackTrace();
+        }
     }
 
 

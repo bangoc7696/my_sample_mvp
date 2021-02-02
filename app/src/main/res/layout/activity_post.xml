@@ -4,9 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sample.mvp.com.es.mvp.ui.posts.PostActivity">
+    tools:context="com.sample.mvp.ui.posts.PostActivity">
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:background="@color/button_start_color"
+        android:fontFamily="@font/montserratbold"
+        android:textColor="@color/white"
+        android:text="TIN MỚI TRONG NGÀY"/>
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_post_list"
+        android:layout_below="@id/tv_header"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
