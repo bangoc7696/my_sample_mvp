@@ -9,6 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp"
+        android:fontFamily="@font/montserratregular"
         android:textColor="@color/button_end_color"
         android:textSize="20sp" />
 
@@ -19,7 +20,7 @@
         android:padding="20dp"
         android:textColor="@android:color/black"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:fontFamily="@font/montserratmedium" />
     <View
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
