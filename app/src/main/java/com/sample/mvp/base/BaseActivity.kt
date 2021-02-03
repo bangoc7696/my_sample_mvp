@@ -125,7 +125,7 @@ abstract class BaseActivity : Activity(), IView {
      */
 
     protected fun showHttpError(e: Throwable) {
-      loadError(e.localizedMessage)
+        loadError(e.localizedMessage)
     }
 
     override fun onStop() {

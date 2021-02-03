@@ -42,7 +42,6 @@ class NetModule {
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .client(okHttpClient)
                 .baseUrl("https://testapi.io/api/ngocnb21/").build()
-                /*.baseUrl("https://jsonplaceholder.typicode.com/").build()*/
     }
 
 
